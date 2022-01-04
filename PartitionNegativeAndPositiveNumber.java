@@ -18,7 +18,9 @@ public class PartitionNegativeAndPositiveNumber {
         ArrayList<Integer> list1 = new ArrayList<>();
         ArrayList<Integer> list2 = new ArrayList<>();
 
-        for (int i = 0; i < n; i++) {
+        list1.add(arr[0]);
+
+        for (int i = 1; i < n; i++) {
             if ((arr[0] ^ arr[i]) < 0) {
                 list2.add(arr[i]);
             } else {
